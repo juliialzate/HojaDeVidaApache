@@ -1,0 +1,119 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* estilos.css */
+/* FUNCIONA CORRECTAMENTE */
+
+/* Fondo verde para toda la página */
+body {
+    background-color: #2ecc71; /* Color verde */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Cuadro blanco centrado */
+.cuadro-blanco {
+    background-color: #ffffff; /* Color blanco */
+    width: 850px;
+    padding: 20px;
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 4500px; /* Ajusta el valor según la distancia que desees */
+    margin-bottom:120px ;
+}
+
+/* Cuadro amarillo */
+.cuadro-amarillo {
+    background-color: #f1c40f; /* Color amarillo */
+    width: 500px; /* Ajuste para que haya espacio entre columnas */
+    padding: 20px;
+    margin: 40px;
+    border-radius: 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.cuadro-morado {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px; /* Ajusta este valor según tu diseño */
+    margin: 0 auto; /* Esto centra el cuadro morado en la página */
+    text-align: right;
+}
+
+
+.cuadro-morado h1 {
+    font-size: 3cap; /* Ajusta el tamaño del texto según lo que desees */
+    color: #ffffff; /* Color blanco */
+}
+
+/* Organizar las columnas */
+.columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Alineación y espaciado */
+.center {
+    text-align: left;
+}
+
+/* Estilo para los títulos de secciones */
+.titulo-seccion {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/* Estilo para las columnas dentro de cada sección */
+.columnas .cuadro-amarillo {
+    flex: 1;
+    margin: 30px;
+}
+
+/* Estilo para los puestos y empresas */
+.datos-puesto-empresa {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #ecf0f1; /* Fondo gris claro para diferenciación */
+}
+
+.datos-puesto-empresa div {
+    width: 60%;
+    text-align: left;
+}
+
+/* Estilo para las descripciones */
+.descripcion {
+    background-color: #e67e22; /* Color naranja */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#imagenGenero {
+    width: 125px; /* Ancho especificado */
+    height: 150px; /* Alto especificado */
+
+}

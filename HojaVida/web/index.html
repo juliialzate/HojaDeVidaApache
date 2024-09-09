@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Crea tu CV</title>
+        <link rel = "stylesheet" href="estilos.css"/>
+
+    </head>
+    <body>
+        <div class="head">
+            <img src="imagenes/head.jpg" class="head" />
+        </div>
+        
+        <div class="contenedor-principal"></div>
+        <form method = "get" action="hoja2">
+            <center>
+            <h3 class="titulo-seccion">1. Ingrese sus datos personales</h3>
+            <div class="columnas">
+                <div class="columna1">
+                    <ul>
+                        <li>
+                            <label for="nombre">Nombre completo: </label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre completo" required  />
+                        </li>
+                        <li>
+                            <label for="celular">Celular:</label>
+                            <input type="tel" id="celular" name="celular" placeholder="Ingrese número de celular" required minlength="10" maxlength="10" size="10"/>
+                        </li>
+                        <li>
+                            <label for="cedula">Cédula:</label>
+                            <input type="tel" id="cedula" name="cedula" placeholder="Ingrese número de cédula" required minlength="5" maxlength="10" size="10"/>
+                        </li>
+                        <li>
+                            <label for="nacimiento">Fecha de nacimiento:</label>
+                            <input type="date" id="nacimiento" name="nacimiento" placeholder="Ingrese su fecha de nacimiento" required />
+                        </li>
+                        <li>
+                            <label for="edad">Edad:</label>
+                            <input type="tel" id="edad" name="edad" placeholder="Ingrese su edad" maxlength="2" size="2"/>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna2">
+                    <ul>
+                        <li>
+                            <label for="libreta">Número de Libreta militar: (Opcional)</label>
+                            <input type="tel" id="libreta" name="libreta" placeholder="Ingrese su número de libreta militar en caso de que tenga"/>
+                        </li>
+                        <li>
+                            <label for="direccion">Correo Electrónico: </label>
+                            <input type="mail" id="direccion" name="direccion" placeholder="Ingrese su dirección de correo electrónico"/>
+                        </li>
+                        <li>
+                            <label for="ciudad">Ciudad de residencia:</label>
+                            <input type="text" id="ciudad" name="ciudad" placeholder="¿En que ciudad vive?" required />
+                        </li>
+                        <br>
+                        <li>
+                            <label style="text-align: left;">Género:</label>
+                            <div style="text-align: left;">
+                                <label style="display: block;">
+                                    <input type="radio" id="generoFemenino" name="genero" value="femenino"/>
+                                    Femenino
+                                </label>
+                                <label style="display: block;">
+                                    <input type="radio" id="generoMasculino" name="genero" value="masculino"/>
+                                    Masculino
+                                </label>
+                                <label style="display: block;">
+                                    <input type="radio" id="no-binario" name="genero" value="no-binario"/>
+                                    No binario
+                                </label>
+                                <label style="display: block;">
+                                    <input type="radio" id="otro" name="genero" value="otro"/>
+                                    Otro
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="titulo-seccion">2. Ingrese su formación académica</h3>
+            <div class="columnas">
+                <div class="columna1">
+                    <ul>
+                        <li>
+                            <label for="primaria">Colegio del que se graduó de primaria:</label>
+                            <input type="text" id="primaria" name="primaria" placeholder="¿En qué colegio se graduó de la primaria?" required/>
+                        </li>
+                        <li>
+                            <label for="secundaria">Colegio del que se graduó de secundaria:</label>
+                            <input type="text" id="secundaria" name="secundaria" placeholder="¿En qué colegio se graduó de la secundaria?" required/>
+                        </li>
+                        <li>
+                            <label for="gradocolegio">Fecha en que se graduó del colegio:</label>
+                            <input type="date" id="gradocolegio" name="gradocolegio"/>
+                        </li>
+                        <li>
+                            <label for="tecnicos">Técnicos:</label>
+                            <input type="text" id="tecnicos" name="tecnicos" placeholder="¿Tiene algún técnico certificado? ¿Cuál?"/>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna2">
+                    <ul>
+                        <li>
+                            <label for="tecnologo">Tecnólogo:</label>
+                            <input type="text" id="tecnologo" name="tecnologo" placeholder="¿Tiene algún tecnólogo certificado? ¿Cuál?"/>
+                        </li>
+                        <li>
+                            <label for="pregrado">Pregrado:</label>
+                            <input type="text" id="pregrado" name="pregrado" placeholder="¿De qué carrera se graduó?" required/>
+                        </li>
+                        <li>
+                            <label for="universidad">Universidad:</label>
+                            <input type="text" id="universidad" name="universidad" placeholder="¿En qué universidad estudió?" required/>
+                        </li>
+                        <li>
+                            <label for="gradou">Fecha en que se graduó de la universidad:</label>
+                            <input type="date" id="gradou" name="gradou"/>
+                        </li>
+                        <li>
+                            <label for="idiomas">Idiomas que maneja:</label>
+                            <input type="text" id="idiomas" name="idiomas" placeholder="¿En qué idiomas tiene un nivel de B2 o más?"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="titulo-seccion">3. Ingrese su experiencia laboral</h3>
+            <div class="columnas">
+                <div class="columna1">
+                    <ul>
+                        <li>
+                            <label for="puesto1">Puestos que ha ejercido:</label>
+                            <input type="text" id="puesto1" name="puesto1" placeholder="1. Ingrese el puesto que desempeñó" required/>
+                        </li>
+                        <li>
+                            <label for="puesto2">Puestos que ha ejercido:</label>
+                            <input type="text" id="puesto2" name="puesto2" placeholder="2. Ingrese el puesto que desempeñó" required/>
+                        </li>
+                        <li>
+                            <label for="puesto3">Puestos que ha ejercido:</label>
+                            <input type="text" id="puesto3" name="puesto3" placeholder="3. Ingrese el puesto que desempeñó"/>
+                        </li>
+                        <li>
+                            <label for="empresa1">Empresa donde ejerció primer puesto:</label>
+                            <input type="text" id="empresa1" name="empresa1" placeholder="1. Ingrese el nombre de la empresa donde trabajó" required/>
+                        </li>
+                        <li>
+                            <label for="empresa2">Empresa donde ejerció segundo puesto:</label>
+                            <input type="text" id="empresa2" name="empresa2" placeholder="2. Ingrese el nombre de la empresa donde trabajó" required/>
+                        </li>
+                        <li>    
+                            <label for="empresa3">Empresa donde ejerció tercer puesto:</label>
+                            <input type="text" id="empresa3" name="empresa3" placeholder="3. Ingrese el nombre de la empresa donde trabajó" />
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna2">
+                    <ul>
+                        <li>
+                            <label for="descripcion1">Descripción de labor ejercida y duración:</label>
+                            <input type="text" id="descripcion1" name="descripcion1" placeholder="1. ¿Qué labores solía realizar?" required/>
+                        </li>
+						<li>
+							<label for="descripcion2">Descripción de labor ejercida y duración:</label>
+                            <input type="text" id="descripcion2" name="descripcion2" placeholder="2. ¿Qué labores solía realizar?" required/>
+                        </li>
+						<li>
+							<label for="descripcion3">Descripción de labor ejercida y duración:</label>
+                            <input type="text" id="descripcion3" name="descripcion3" placeholder="3. ¿Qué labores solía realizar?"/>
+                        </li>
+                        <li>
+                            <label for="duracion1">Primera referencia laboral:</label>
+                            <input type="text" id="duracion1" name="duracion1" placeholder="Ingrese nombre y celular" required/>
+                        </li>
+						<li>
+							<label for="duracion2">Segunda referencia laboral:</label>
+                            <input type="text" id="duracion2" name="duracion2" placeholder="Ingrese nombre y celular" required/>
+                        </li>
+						<li>
+							<label for="duracion3">Referencias personales:</label>
+                            <input type="text" id="duracion3" name="duracion3" placeholder="Ingrese nombre y celular" required/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="titulo-seccion">¿Cuáles son sus habilidades y objetivos?</h3>
+            <div class="columnas">
+                <div class="columna1">
+                    <ul>
+                        <li>
+                            <label for="habilidad1">Habilidades profesionales: </label>
+                            <input type="text" id="habilidad1" name="habilidad1" placeholder="Ingrese sus habilidades profesionales"/>
+                        </li> 
+						<li>   
+							<label for="habilidad2">Habilidades personales: </label>
+                            <input type="text" id="habilidad2" name="habilidad2" placeholder="Ingrese sus habilidades personales"/>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna2">
+                    <ul>
+                        <li>
+                            <label for="objetivos">Descripción de objetivos:</label>
+                            <textarea id="objetivos" name="objetivos" placeholder="Ingrese una breve descripción sobre sus objetivos profesionales y personales"></textarea>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </center>
+            
+            <center>
+                <input type="submit" value="Enviar">
+            </center>
+
+            <br>
+
+        </form>
+            
+    </body>
+</html>
